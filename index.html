@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chứng Chỉ P12 - Dịch Vụ An Toàn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#FF6B00',
+                        success: '#00B42A',
+                        dark: '#1D2129',
+                        light: '#F2F3F5',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-dark min-h-screen">
+    <!-- Thanh điều hướng -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-primary flex items-center">
+                <i class="fa fa-shield mr-2"></i> Chứng Chỉ P12
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#packages" class="text-gray-600 hover:text-primary">Gói Dịch Vụ</a>
+                <a href="#check" class="text-gray-600 hover:text-primary">Tra Cứu</a>
+            </div>
+            <button class="md:hidden text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============= GÓI DỊCH VỤ ============= -->
+    <section id="packages" class="py-12 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-2">Gói Dịch Vụ Chứng Chỉ P12</h2>
+                <p class="text-gray-500">Giá Ưu Đãi Tốt Nhất Thị Trường — Duyệt nhanh & Bảo hành</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Gói Cơ Bản -->
+                <div class="bg-white rounded-2xl shadow p-6 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-2">Gói Cơ Bản</h3>
+                    <p class="text-sm text-gray-500 mb-4">Dành cho người dùng cá nhân</p>
+                    <p class="text-4xl font-bold text-primary mb-6">39.000 <span class="text-lg font-normal text-gray-500">VNĐ/năm</span></p>
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-start"><i class="fa fa-check text-success mt-1 mr-2"></i> Chứng chỉ P12</li>
+                        <li class="flex items-start"><i class="fa fa-check text-success mt-1 mr-2"></i> Sử dụng 365 ngày</li>
+                        <li class="flex items-start text-gray-400"><i class="fa fa-times mt-1 mr-2"></i> App Group</li>
+                    </ul>
+                    <a href="https://zalo.me/0985985932" target="_blank" class="block w-full text-center py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white">
+                        Mua Ngay
+                    </a>
+                </div>
+                <!-- Gói Cao Cấp -->
+                <div class="bg-white rounded-2xl shadow p-6 hover:shadow-md transition border-2 border-primary relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-medium px-3 py-1 rounded-full">NỔI BẬT</div>
+                    <h3 class="text-xl font-semibold mb-2">Gói Cao Cấp</h3>
+                    <p class="text-sm text-gray-500 mb-4">Đầy đủ chức năng</p>
+                    <p class="text-4xl font-bold text-primary mb-6">59.000 <span class="text-lg font-normal text-gray-500">VNĐ/năm</span></p>
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-start"><i class="fa fa-bolt text-yellow-500 mt-1 mr-2"></i> Duyệt ngay lập tức</li>
+                        <li class="flex items-start"><i class="fa fa-check text-success mt-1 mr-2"></i> App Group, Thông báo đẩy, VPN</li>
+                        <li class="flex items-start"><i class="fa fa-shield text-primary mt-1 mr-2"></i> Bảo hành 30 ngày miễn phí</li>
+                        <li class="flex items-start"><i class="fa fa-unlock-alt text-secondary mt-1 mr-2"></i> Mở khóa Blacklist</li>
+                    </ul>
+                    <a href="https://zalo.me/0985985932" target="_blank" class="block w-full text-center py-2 rounded-lg bg-primary text-white hover:bg-primary/90">
+                        Mua Ngay
+                    </a>
+                </div>
+                <!-- Gói Vĩnh Viễn -->
+                <div class="bg-white rounded-2xl shadow p-6 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-2">Gói Vĩnh Viễn</h3>
+                    <p class="text-sm text-gray-500 mb-4">Sử dụng trọn đời</p>
+                    <p class="text-4xl font-bold text-secondary mb-6">149.000 <span class="text-lg font-normal text-gray-500">VNĐ/trọn đời</span></p>
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-start"><i class="fa fa-check text-success mt-1 mr-2"></i> Tất cả quyền lợi cao cấp</li>
+                        <li class="flex items-start"><i class="fa fa-clock-o text-success mt-1 mr-2"></i> Sử dụng vĩnh viễn</li>
+                        <li class="flex items-start"><i class="fa fa-headphones text-primary mt-1 mr-2"></i> Hỗ trợ ưu tiên 24/7</li>
+                    </ul>
+                    <a href="https://zalo.me/0985985932" target="_blank" class="block w-full text-center py-2 rounded-lg border border-secondary text-secondary hover:bg-secondary hover:text-white">
+                        Mua Ngay
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= TRA CỨU ĐƠN HÀNG ============= -->
+    <section id="check" class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-lg">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold mb-2">Tra Cứu Đơn Hàng</h2>
+                <p class="text-gray-500">Nhập UDID hoặc Mã đơn hàng để kiểm tra trạng thái</p>
+            </div>
+            <div class="bg-light rounded-2xl p-6 shadow-sm">
+                <input type="text" id="search-input" placeholder="Nhập UDID hoặc mã đơn hàng..." 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-primary/50">
+                <button onclick="checkOrder()" class="w-full py-3 bg-primary text-white rounded-lg hover:bg-primary/90 mb-4">
+                    <i class="fa fa-search mr-2"></i> Tra Cứu
+                </button>
+                <button onclick="alert('Hướng dẫn lấy UDID:\n1. Mở trang: udid.apple.com trên iPhone\n2. Kết nối thiết bị\n3. Cài đặt cấu hình\n4. Sao chép UDID')" 
+                    class="w-full py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-100">
+                    <i class="fa fa-download mr-2"></i> Lấy UDID của tôi
+                </button>
+                
+                <!-- Kết quả tra cứu -->
+                <div id="result" class="hidden mt-6">
+                    <div class="p-4 rounded-lg bg-yellow-50 border border-yellow-200">
+                        <div class="flex items-start">
+                            <i class="fa fa-info-circle text-yellow-500 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold text-yellow-800">Thông báo</h4>
+                                <p class="text-sm text-yellow-700 mt-1">Vui lòng liên hệ Zalo để kiểm tra đơn hàng của bạn:</p>
+                                <a href="https://zalo.me/0985985932" target="_blank" class="inline-flex items-center text-primary font-medium mt-2 hover:underline">
+                                    <i class="fa fa-comments mr-1"></i> Zalo: 0985985932
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= HỖ TRỢ ============= -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-2xl text-center">
+            <h2 class="text-2xl font-bold mb-4">Cần Hỗ Trợ?</h2>
+            <p class="text-gray-500 mb-6">Liên hệ với chúng tôi để được hỗ trợ nhanh nhất</p>
+            <a href="https://zalo.me/0985985932" target="_blank" class="inline-flex items-center px-6 py-3 bg-[#0068FF] text-white rounded-lg font-medium hover:bg-[#0052CC]">
+                <i class="fa fa-comments mr-2"></i> Chat Zalo: 0985985932
+            </a>
+        </div>
+    </section>
+
+    <!-- Chân trang -->
+    <footer class="bg-dark text-white py-10 px-4">
+        <div class="container mx-auto text-center">
+            <p class="text-lg font-semibold mb-2">Chứng Chỉ P12</p>
+            <p class="text-gray-400 text-sm mb-4">Dịch vụ cung cấp chứng chỉ an toàn và tin cậy</p>
+            <p class="text-gray-500 text-xs">© 2026 chungchip12.com — Mọi quyền được bảo lưu</p>
+        </div>
+    </footer>
+
+    <script>
+        function checkOrder() {
+            const input = document.getElementById('search-input').value.trim();
+            const result = document.getElementById('result');
+            if (!input) {
+                alert('Vui lòng nhập thông tin tra cứu!');
+                return;
+            }
+            result.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
